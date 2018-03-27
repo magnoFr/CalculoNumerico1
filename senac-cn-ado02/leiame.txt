@@ -1,0 +1,5 @@
+O programa calcula uma aproximação do seno e cosseno utilizand a 
+série de Taylor.
+
+Depois é gerado um gráfico do comportamento do seno e do cosseno,
+juntamente com os valores de erro em um outro arquivo
