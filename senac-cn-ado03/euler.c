@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lib.h"
-#define _XOPEN_SOURCE 500
+
 
 int main(){
 
-calculateEuler(0);
+calculateEuler(0, "euler_flt.png");
+calculateEuler(1, "euler_ldbl.png");
+calculateEuler(0, "euler_dbl.png");
 
 
 exit(0);

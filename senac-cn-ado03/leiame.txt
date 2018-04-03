@@ -1,0 +1,3 @@
+O problema consiste em criar três tipos de aproximaçoẽs para o falor de euler, sendo para o tipo float, double e por último o long double.
+
+Depois deve ser gerado um arquivo png para cada tipo de aproximação com os pontos do resultado das pontências de euler. Para a plotagem dos gáficos, foi utilizado o gnuplot.

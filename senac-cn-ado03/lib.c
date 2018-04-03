@@ -1,22 +1,25 @@
+#define _XOPEN_SOURCE 500
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include "lib.h"
 
 
-void calculateEuler(int x){
+
+void calculateEuler(int x, char * nomeArquivo){
 
     FILE *gnu = popen("gnuplot -persistent", "w");
 
     fprintf(gnu, "set terminal png\n");
-    fprintf(gnu, "set output 'FloatEuler.png'\n");
+    fprintf(gnu, "set output '%s'\n", nomeArquivo);
     fprintf(gnu, "set logscale x\n");
     fprintf(gnu, "set yrange [0:4]\n");
-    fprintf(gnu, "set title 'Euler Approximation with Float'\n");
-
-    fprintf(gnu, "plot '-' w l\n");
+    
 
     if (x == 0){
+        fprintf(gnu, "Float Euler'\n");
+
+        fprintf(gnu, "plot '-' w l\n");
 
         float i;
         float result;
@@ -29,6 +32,9 @@ void calculateEuler(int x){
     }
 
     else if (x == 1){
+        fprintf(gnu, "set title 'Long Double Euler'\n");
+
+        fprintf(gnu, "plot '-' w l\n");
 
         long double i;
         long double result;
@@ -41,6 +47,9 @@ void calculateEuler(int x){
     }
 
     else if (x == 2){
+        fprintf(gnu, "set title 'Double Euler'\n");
+
+        fprintf(gnu, "plot '-' w l\n");
 
         double i;
         double result;
