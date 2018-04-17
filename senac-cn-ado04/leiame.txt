@@ -1,0 +1,6 @@
+Utiliza metodos da bissecção, Newton e secante.
+
+O objetivo é achar uma aproximação da raiz quadrada de um número.
+Para isso foi preciso achar uma função que que reprezente a raiz quadrada do número desejado, sendo essa f(x) = xˆ2 - valor do input.
+
+Os metodos acham o zero de uma função, logo acha a aproximação da raiz.

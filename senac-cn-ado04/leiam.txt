@@ -1,3 +1,0 @@
-Utiliza metodos da bissecção, Newton e secante.
-
-O objetivo
